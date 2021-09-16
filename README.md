@@ -7,7 +7,7 @@
 | **Fig. 1** *MAX485 TTL to RS-485 Interface Module* |
 
 ### Description
-This low-power transceiver module uses the Maxim MAX485 IC to enable serial communication over extremely long cable runs (up to 4000 feet / 1200 meters). At a data rate of up to 2.5Mbps, serial data can be transmitted in both directions (half duplex). The modules run on a standard 5V power supply and use 5V logic levels, allowing them to be interfaced to the hardware serial ports of microcontrollers like Atmega, PIC, ESP, Pico, among others. It is also possible to connect multiple modules together to communicate with up to 32 devices. In Modbus RTU, RS485 allows for master/slave communication, with a maximum of 247 slaves for one master. A repeater module is required in the circuit to achieve this.
+This low-power transceiver module uses the Maxim MAX485 IC to enable serial communication over extremely long cable runs (up to 4000 feet / 1200 meters). At a data rate of up to 2.5Mbps, serial data can be transmitted in both directions (half duplex). The modules run on a standard 5V power supply and use 5V logic levels, allowing them to be interfaced to the hardware serial ports of microcontrollers like Atmega, PIC, ESP, Pico, among others. It is also possible to connect multiple modules together to communicate with up to 32 devices. In Modbus RTU, RS-485 allows for master/slave communication, with a maximum of 247 slaves for one master. A repeater module is required in the circuit to achieve this.
 
 ### Key Features of MAX485 TTL to RS-485 Interface Module
 * Use MAX485 Interface chip
@@ -73,7 +73,7 @@ MD01 Temperature and Humidity Transmitter SHT20 Sensor  |  XY-MD02 Temperature a
 ![](https://img.joomcdn.net/dd8e862859759bb0ce20db0a96a7b5d750c1e072_original.jpeg)   |  ![](https://alexnld.com/wp-content/uploads/2020/01/fecddabe-153d-41fb-a6fd-8419b930c41c.jpeg)
 
 ### Description
-The product uses an industrial-grade chip and high-precision SHT20 temperature and humidity sensors, which ensures the product's reliability, precision, and interoperability. Adopt an RS485 hardware interface (with lightning protection), with a protocol layer that is compatible with the standard industrial ModBus RTU protocol via RS-485 module serial interface. 
+The product uses an industrial-grade chip and high-precision SHT20 temperature and humidity sensors, which ensures the product's reliability, precision, and interoperability. Adopt an RS-485 hardware interface (with lightning protection), with a protocol layer that is compatible with the standard industrial ModBus RTU protocol via RS-485 module serial interface. 
 
 ### Sensor Wiring Diagram
 MD01 Temperature and Humidity Transmitter SHT20 Sensor  |  XY-MD02 Temperature and Humidity SHT20 Sensor      
