@@ -67,7 +67,15 @@ Ideally, the wires should be twisted pair. When running longer distances or wher
 * [Arduino ModBus Tutorial](https://arduinogetstarted.com/tutorials/arduino-modbus)
 * [Modbus RTU Master Library for Industrial Automation](https://www.industrialshields.com/blog/arduino-industrial-1/post/modbus-rtu-master-library-for-industrial-automation-200)
 
-### Industrial Grade Temperature and Humidity (SHT20) Sensor
-MD01 Temperature and Humidity Transmitter SHT20 Sensor             |  XY-MD02 Temperature and Humidity SHT20 Sensor      
-:-------------------------:|:-------------------------:
+## Industrial Grade Temperature and Humidity (SHT20) Sensor
+MD01 Temperature and Humidity Transmitter SHT20 Sensor  |  XY-MD02 Temperature and Humidity SHT20 Sensor      
+:------------------------------------------------------:|:------------------------------------------------------------------------:
 ![](https://img.joomcdn.net/dd8e862859759bb0ce20db0a96a7b5d750c1e072_original.jpeg)   |  ![](https://alexnld.com/wp-content/uploads/2020/01/fecddabe-153d-41fb-a6fd-8419b930c41c.jpeg)
+
+### Description
+The product uses an industrial-grade chip and high-precision SHT20 temperature and humidity sensors, which ensures the product's reliability, precision, and interoperability. Adopt an RS485 hardware interface (with lightning protection), with a protocol layer that is compatible with the standard industrial ModBus RTU protocol via RS-485 module serial interface. 
+
+### Sensor Notations
+MD01 Temperature and Humidity Transmitter SHT20 Sensor  |  XY-MD02 Temperature and Humidity SHT20 Sensor      
+:------------------------------------------------------:|:------------------------------------------------------------------------:
+![](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/e0b25240316389ce.jpg)   |  ![](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/sht20-temperature-humidity-sensor-rs485-pmdway-7_856x368.jpg)
