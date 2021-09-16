@@ -28,3 +28,29 @@ With one Master and one or more Slave devices, these devices are often set up in
 | ![space-1.jpg](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/rs485_line.jpg) | 
 |:--:| 
 | **Fig. 2** *RS-485 Wiring Guide* |
+
+#### *Differential Signaling*
+Only two wires and a common ground are required for the RS-485, which employs differential signaling. Differential signals work by connecting one wire to the signal and the other wire to the inverse of the signal. As noise tends to couple into both lines equally and thus cancels out at the receiving end, this enhances the signal's noise tolerance and capacity to recover the signal at the far end of the cable.
+
+#### *Pull-up Resistors*
+On the data lines of the module, there are four 10K pull-up resistors. On the A/B differential lines, two 20K resistors are used. When data is not being transferred, these pull the lines to a known condition. A single 120-ohm resistor completes the circuit (R7). To prevent reflections, place this resistor between the A/B differential lines on each end of the cable. The resistors on the two ends of the line should be kept if employed in a multi-drop setup. 
+
+### Module Wiring
+| ![space-1.jpg](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/RS485_Module_HCMODU0081_Diagram.png) | 
+|:--:| 
+| **Fig. 2** *RS-485 Wiring Guide* |
+
+The module has two 4-pin headers on the assembly. The headers are spaced 1.6″ apart, so if using with solderless breadboards, it is necessary to bridge two different breadboards.
+**1 x 4 Header (Data side)**
+* RO = Receiver Output. Connects to a serial RX pin on the microcontroller
+* RE = Receiver Enable. Active LOW. Connects to a digital output pin on a microcontroller. Drive LOW to enable receiver, HIGH to enable Driver
+* DE = Driver Enable. Active HIGH. Typically, jumper to RE Pin.
+* DI = Driver Input. Connects to serial TX pin on the microcontroller
+**1 x 4 Header (Output side)**
+* VCC = 5V
+* B = Data ‘B’ Inverted Line. Common with the B
+* A = Data ‘A’ Non-Inverted Line. Connects to A on far end module
+* GND = Ground
+**1 x 2 Screw Terminal Block (Output side)**
+* B = Data ‘B’ Inverted Line. Connects to B on far end module
+* A = Data ‘A’ Non-Inverted Line. Connects to A on far end module
