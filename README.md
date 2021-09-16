@@ -80,7 +80,7 @@ MD01 Temperature and Humidity Transmitter SHT20 Sensor  |  XY-MD02 Temperature a
 :------------------------------------------------------:|:------------------------------------------------------------------------:
 ![](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/e0b25240316389ce.jpg)   |  ![](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/sht20-temperature-humidity-sensor-rs485-pmdway-7_856x368.jpg)
 
-### Dependency
+### Dependencies
 The [exmample sketches](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Examples) are tested in Arduino Uno and Mega boards. To work with, install the [ModBusMaster](https://github.com/4-20ma/ModbusMaster) library for communicating with Modbus slaves over RS232/485 (via RTU protocol).
 
-Refer to the [datasheet](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Datasheet) to determine the hex address of the sensor that holds the temperature and humidity data. For more information, configuration, and testing procedures, you could use [ModBus software tools](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Modbus%20Software%20Tools) through the use of RS-485 to USB module.
+Refer to the [datasheet](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Datasheet) to determine the default Slave ID, baud rate, and hex address of the register that holds the temperature and humidity data. For more information, configuration, and testing procedures, you could use [ModBus software tools](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Modbus%20Software%20Tools) through the use of RS-485 to USB module.
