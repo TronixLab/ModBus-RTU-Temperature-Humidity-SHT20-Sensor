@@ -41,16 +41,25 @@ On the data lines of the module, there are four 10K pull-up resistors. On the A/
 | **Fig. 2** *RS-485 Wiring Guide* |
 
 The module has two 4-pin headers on the assembly. The headers are spaced 1.6″ apart, so if using with solderless breadboards, it is necessary to bridge two different breadboards.
+
 **1 x 4 Header (Data side)**
 * RO = Receiver Output. Connects to a serial RX pin on the microcontroller
 * RE = Receiver Enable. Active LOW. Connects to a digital output pin on a microcontroller. Drive LOW to enable receiver, HIGH to enable Driver
-* DE = Driver Enable. Active HIGH. Typically, jumper to RE Pin.
+* DE = Driver Enable. Active HIGH. Typically, jumper to RE Pin
 * DI = Driver Input. Connects to serial TX pin on the microcontroller
+
 **1 x 4 Header (Output side)**
 * VCC = 5V
 * B = Data ‘B’ Inverted Line. Common with the B
 * A = Data ‘A’ Non-Inverted Line. Connects to A on far end module
 * GND = Ground
+
 **1 x 2 Screw Terminal Block (Output side)**
 * B = Data ‘B’ Inverted Line. Connects to B on far end module
 * A = Data ‘A’ Non-Inverted Line. Connects to A on far end module
+
+A and B are the labels for these two differential data lines. These can be found on the screw terminal block of the module, as well as the two center pins on that end.
+When connecting the modules, the wiring should be straight through, with A connected to A on one end and B connected to B on the other.
+
+Ideally, the wires should be twisted pair. When running longer distances or where there is a lot of electrical noise, using twisted pair becomes more important. It is not required for simple breadboard testing or other short runs. A common ground is required, but for shorter runs, this can often be provided by the earth ground at each end. Network cable is commonly used for connecting RS-485 because it provides twisted pair and can also provide a ground wire.
+
