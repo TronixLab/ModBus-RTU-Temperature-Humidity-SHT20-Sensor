@@ -38,7 +38,7 @@ On the data lines of the module, there are four 10K pull-up resistors. On the A/
 ### Module Wiring
 | ![space-1.jpg](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/RS485_Module_HCMODU0081_Diagram.png) | 
 |:--:| 
-| **Fig. 2** *RS-485 Wiring Guide* |
+| **Fig. 3** *RS-485 Wiring Guide* |
 
 The module has two 4-pin headers on the assembly. The headers are spaced 1.6″ apart, so if using with solderless breadboards, it is necessary to bridge two different breadboards.
 
@@ -63,3 +63,11 @@ When connecting the modules, the wiring should be straight through, with A conne
 
 Ideally, the wires should be twisted pair. When running longer distances or where there is a lot of electrical noise, using twisted pair becomes more important. It is not required for simple breadboard testing or other short runs. A common ground is required, but for shorter runs, this can often be provided by the earth ground at each end. Network cable is commonly used for connecting RS-485 because it provides twisted pair and can also provide a ground wire.
 
+### Further Readings
+* [Arduino ModBus Tutorial](https://arduinogetstarted.com/tutorials/arduino-modbus)
+* [Modbus RTU Master Library for Industrial Automation](https://www.industrialshields.com/blog/arduino-industrial-1/post/modbus-rtu-master-library-for-industrial-automation-200)
+
+### Industrial Grade Temperature and Humidity (SHT20) Sensor
+MD01 Temperature and Humidity Transmitter SHT20 Sensor             |  XY-MD02 Temperature and Humidity SHT20 Sensor      
+:-------------------------:|:-------------------------:
+![](https://img.joomcdn.net/dd8e862859759bb0ce20db0a96a7b5d750c1e072_original.jpeg)   |  ![](https://alexnld.com/wp-content/uploads/2020/01/fecddabe-153d-41fb-a6fd-8419b930c41c.jpeg)
