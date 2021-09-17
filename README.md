@@ -7,7 +7,7 @@
 | **Fig. 1** *MAX485 TTL to RS-485 Interface Module* |
 
 ### Description
-This low-power transceiver module uses the Maxim MAX485 IC to enable serial communication over extremely long cable runs (up to 4000 feet / 1200 meters). At a data rate of up to 2.5Mbps, serial data can be transmitted in both directions (half duplex). The modules run on a standard 5V power supply and use 5V logic levels, allowing them to be interfaced to the hardware serial ports of microcontrollers like Atmega, PIC, ESP, Pico, among others. It is also possible to connect multiple modules together to communicate with up to 32 devices. In Modbus RTU, RS-485 allows for master/slave communication, with a maximum of 247 slaves for one master. A repeater module is required in the circuit to achieve this.
+This low-power transceiver module uses the Maxim MAX485 IC to enable serial communication over extremely long cable runs (up to 4000 feet / 1200 meters). At a data rate of up to 2.5Mbps, serial data can be transmitted in both directions (half duplex). The modules run on a standard 5V power supply and use 5V logic levels, allowing them to be interfaced to the hardware serial ports of microcontrollers like Atmega, PIC, ESP, Pico, and among others. It is also possible to connect multiple modules together to communicate with up to 32 devices. In Modbus RTU, RS-485 allows for master/slave communication, with a maximum of 247 slaves for one master. A repeater module is required in the circuit to achieve this.
 
 ### Key Features of MAX485 TTL to RS-485 Interface Module
 * Use MAX485 Interface chip
@@ -27,7 +27,7 @@ With one Master and one or more Slave devices, these devices are often set up in
 
 | ![space-1.jpg](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/rs485_line.jpg) | 
 |:--:| 
-| **Fig. 2** *RS-485 Wiring Guide* |
+| **Fig. 2** *Multiple Devices Wiring Example* |
 
 #### *Differential Signaling*
 Only two wires and a common ground are required for the RS-485, which employs differential signaling. Differential signals work by connecting one wire to the signal and the other wire to the inverse of the signal. As noise tends to couple into both lines equally and thus cancels out at the receiving end, this enhances the signal's noise tolerance and capacity to recover the signal at the far end of the cable.
@@ -81,6 +81,6 @@ MD01 Temperature and Humidity Transmitter SHT20 Sensor  |  XY-MD02 Temperature a
 ![](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/e0b25240316389ce.jpg)   |  ![](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/blob/main/Docs/sht20-temperature-humidity-sensor-rs485-pmdway-7_856x368.jpg)
 
 ### Dependencies
-The [exmample sketches](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Examples) are tested in Arduino Uno and Mega boards. To work with, install the [ModBusMaster](https://github.com/4-20ma/ModbusMaster) library for communicating with Modbus slaves over RS232/485 (via RTU protocol).
+The [exmample sketches](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Examples) are tested in Arduino Uno, Mega and ESP32 boards. To work with, install the [ModBusMaster](https://github.com/4-20ma/ModbusMaster) library for communicating with Modbus slaves over RS232/485 (via RTU protocol).
 
 Refer to the [datasheet](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Datasheet) to determine the default Slave ID, baud rate, and hex address of the register that holds the temperature and humidity data. For more information, configuration, and testing procedures, you could use [ModBus software tools](https://github.com/TronixLab/ModBus-RTU-Temperature-Humidity-SHT20-Sensor/tree/main/Modbus%20Software%20Tools) through the use of RS-485 to USB module.
